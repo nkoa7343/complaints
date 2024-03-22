@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Complaint Form</title>
+    <link href="form.css" type="text/css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <div class="main-block">
+        <form action="connnect.php" method="post" name="myCForm">
+            <h1>Talk To Us</h1>
+            <div class="info">
+            <b>Customer Details</b><br><br>
+            <div class="customer">
+                <label>
+                First Name<input  type="text" name="CustomerFirstName">
+            </label>
+            <label>
+                Last Name<input type="text" name="CustomerLastName">
+            </label>
+            <label>
+                Phone Number<input  type="telephone" name="ctPhoneNumber">
+            </label>
+            <label>
+                Email<input type="email" name="ctEmail">
+            </label>
+            </div>
+            <b>Employee Details</b><br><br>
+            <div id="employee">
+                <label>
+                    First Name<input  type="text" name="emfname">
+                </label>
+                <label>
+                Last Name<input type="text" name="emlname">
+                </label>
+                <label>
+                Employee Number<input  type="number" name="emEmployeeNumber">
+                </label>
+                <label>
+                    Employee Department<br><br>
+                    <select id="department" name="emdepartment">
+                        <option value="Produce" selected>Produce</option>
+                        <option value="Store Operations">Store Operations</option>
+                        <option value="Checkout">Checkout</option>
+                        <option value="Customer Service">Customer Service</option>
+                        <option value="Product Management">Product Management</option>
+                        <option value="Store Operations">Store Operations</option>
+                        <option value="Inventory Management">Inventory Management</option>
+                        <option value="Quality Control">Quality Control</option>
+                        <option value="Meat & Seafood">Meat & Seafood</option>
+                    </select>
+                </label>
+            </div>
+            <label>
+            Complaint Type
+                <input type="text" name="ComplaintType">
+            </label>
+            <label>
+            Product Name<input type="text" name="pdname">
+            </label>
+            <label>
+            Product Category<input type="text" name="pdcat">
+            </label>
+            <label>
+            Date
+                <input type="date" name="_Date">
+            </label>
+            <label>
+            Store Location
+                <input type="text" name="StoreLocation">
+            </label>
+            <label>
+            </div>
+            <p>Complaint Description</p>
+            <div>
+                <textarea name="ComplaintDescription" rows="4"></textarea>
+            </div>
+            </label>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        
+    </div>
+  </body>
+</html>
